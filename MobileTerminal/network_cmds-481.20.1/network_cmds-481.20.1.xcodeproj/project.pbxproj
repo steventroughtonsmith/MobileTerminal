@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		B0AB8FDA1CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7261210C0EE8707500AFED1B;
+			remoteInfo = alias;
+		};
+		B0AB8FDC1CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7261212D0EE8710B00AFED1B;
+			remoteInfo = arp;
+		};
+		B0AB8FDE1CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 72B732DA1899B0380060E6D4;
+			remoteInfo = cfilutil;
+		};
+		B0AB8FE01CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 723C7068142BAFEA007C87E9;
+			remoteInfo = dnctl;
+		};
+		B0AB8FE21CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7282BA0C1AFAD4C9005DE836;
+			remoteInfo = ecnprobe;
+		};
+		B0AB8FE41CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 726121540EE8881700AFED1B;
+			remoteInfo = ifconfig;
+		};
+		B0AB8FE61CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4D2B04F31208C2040004A3F3;
+			remoteInfo = ip6addrctl;
+		};
+		B0AB8FE81CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 724DAB820EE88EFA008900D0;
+			remoteInfo = ip6fw;
+		};
+		B0AB8FEA1CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 724DAB5F0EE88E2A008900D0;
+			remoteInfo = ipfw;
+		};
+		B0AB8FEC1CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 724DABA20EE88FE3008900D0;
+			remoteInfo = kdumpd;
+		};
+		B0AB8FEE1CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5658259F1339218F003E5FA5;
+			remoteInfo = mnc;
+		};
+		B0AB8FF01CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 72311F42194A349000EB4788;
+			remoteInfo = mptcp_client;
+		};
+		B0AB8FF21CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 690D978112DE6034004323A7;
+			remoteInfo = mtest;
+		};
+		B0AB8FF41CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 724DAC0D0EE8940D008900D0;
+			remoteInfo = ndp;
+		};
+		B0AB8FF61CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 724DABDB0EE8912D008900D0;
+			remoteInfo = natd;
+		};
+		B0AB8FF81CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7216D2460EE896C000AE70E4;
+			remoteInfo = netstat;
+		};
+		B0AB8FFA1CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7247B83116165EDC00873B3C;
+			remoteInfo = pktapctl;
+		};
+		B0AB8FFC1CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7200F2FA1958A34D0033E22C;
+			remoteInfo = pktmnglr;
+		};
+		B0AB8FFE1CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7216D27C0EE8980A00AE70E4;
+			remoteInfo = ping;
+		};
+		B0AB90001CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7216D29A0EE898BD00AE70E4;
+			remoteInfo = ping6;
+		};
+		B0AB90021CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7216D2CD0EE89B7900AE70E4;
+			remoteInfo = rarpd;
+		};
+		B0AB90041CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7216D2ED0EE89CBC00AE70E4;
+			remoteInfo = route;
+		};
+		B0AB90061CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7216D3140EE89E9E00AE70E4;
+			remoteInfo = rtadvd;
+		};
+		B0AB90081CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7216D3590EE8A02200AE70E4;
+			remoteInfo = rtsol;
+		};
+		B0AB900A1CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7216D3A70EE8A3BB00AE70E4;
+			remoteInfo = spray;
+		};
+		B0AB900C1CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7294F0F90EE8BB460052EC88;
+			remoteInfo = traceroute;
+		};
+		B0AB900E1CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7294F12A0EE8BD280052EC88;
+			remoteInfo = traceroute6;
+		};
+		B0AB90101CA580F4001649D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 713297681A93C743002359CF;
+			remoteInfo = unbound;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B0AB8F951CA580F4001649D2 /* .DS_Store */ = {isa = PBXFileReference; lastKnownFileType = file; path = .DS_Store; sourceTree = "<group>"; };
+		B0AB8F961CA580F4001649D2 /* alias */ = {isa = PBXFileReference; lastKnownFileType = folder; path = alias; sourceTree = "<group>"; };
+		B0AB8F971CA580F4001649D2 /* APPLE_LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = APPLE_LICENSE; sourceTree = "<group>"; };
+		B0AB8F981CA580F4001649D2 /* arp.tproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = arp.tproj; sourceTree = "<group>"; };
+		B0AB8F991CA580F4001649D2 /* cfilutil */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cfilutil; sourceTree = "<group>"; };
+		B0AB8F9A1CA580F4001649D2 /* dnctl */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dnctl; sourceTree = "<group>"; };
+		B0AB8F9B1CA580F4001649D2 /* ecnprobe */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ecnprobe; sourceTree = "<group>"; };
+		B0AB8F9C1CA580F4001649D2 /* ifconfig.tproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ifconfig.tproj; sourceTree = "<group>"; };
+		B0AB8F9D1CA580F4001649D2 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		B0AB8F9E1CA580F4001649D2 /* ip6addrctl.tproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ip6addrctl.tproj; sourceTree = "<group>"; };
+		B0AB8F9F1CA580F4001649D2 /* ip6fw.tproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ip6fw.tproj; sourceTree = "<group>"; };
+		B0AB8FA01CA580F4001649D2 /* ipfw.tproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ipfw.tproj; sourceTree = "<group>"; };
+		B0AB8FA11CA580F4001649D2 /* kdumpd.tproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = kdumpd.tproj; sourceTree = "<group>"; };
+		B0AB8FA21CA580F4001649D2 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B0AB8FA31CA580F4001649D2 /* mnc.tproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mnc.tproj; sourceTree = "<group>"; };
+		B0AB8FA41CA580F4001649D2 /* mptcp_client */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mptcp_client; sourceTree = "<group>"; };
+		B0AB8FA51CA580F4001649D2 /* mtest.tproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mtest.tproj; sourceTree = "<group>"; };
+		B0AB8FA61CA580F4001649D2 /* natd.tproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = natd.tproj; sourceTree = "<group>"; };
+		B0AB8FA71CA580F4001649D2 /* ndp.tproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ndp.tproj; sourceTree = "<group>"; };
+		B0AB8FA81CA580F4001649D2 /* netstat.tproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = netstat.tproj; sourceTree = "<group>"; };
+		B0AB8FA91CA580F4001649D2 /* network-client-server-entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "network-client-server-entitlements.plist"; sourceTree = "<group>"; };
+		B0AB8FAA1CA580F4001649D2 /* network_cmds.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = network_cmds.plist; sourceTree = "<group>"; };
+		B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = network_cmds.xcodeproj; sourceTree = "<group>"; };
+		B0AB8FAE1CA580F4001649D2 /* ping.tproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ping.tproj; sourceTree = "<group>"; };
+		B0AB8FAF1CA580F4001649D2 /* ping6.tproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ping6.tproj; sourceTree = "<group>"; };
+		B0AB8FB01CA580F4001649D2 /* pktapctl */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pktapctl; sourceTree = "<group>"; };
+		B0AB8FB11CA580F4001649D2 /* pktmnglr */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pktmnglr; sourceTree = "<group>"; };
+		B0AB8FB21CA580F4001649D2 /* rarpd.tproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = rarpd.tproj; sourceTree = "<group>"; };
+		B0AB8FB31CA580F4001649D2 /* route.tproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = route.tproj; sourceTree = "<group>"; };
+		B0AB8FB41CA580F4001649D2 /* rtadvd.tproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = rtadvd.tproj; sourceTree = "<group>"; };
+		B0AB8FB51CA580F4001649D2 /* rtsol.tproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = rtsol.tproj; sourceTree = "<group>"; };
+		B0AB8FB61CA580F4001649D2 /* spray.tproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = spray.tproj; sourceTree = "<group>"; };
+		B0AB8FB71CA580F4001649D2 /* traceroute.tproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = traceroute.tproj; sourceTree = "<group>"; };
+		B0AB8FB81CA580F4001649D2 /* traceroute6.tproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = traceroute6.tproj; sourceTree = "<group>"; };
+		B0AB8FB91CA580F4001649D2 /* unbound */ = {isa = PBXFileReference; lastKnownFileType = folder; path = unbound; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		B0AB8F8F1CA580F4001649D2 = {
+			isa = PBXGroup;
+			children = (
+				B0AB8F951CA580F4001649D2 /* .DS_Store */,
+				B0AB8F961CA580F4001649D2 /* alias */,
+				B0AB8F971CA580F4001649D2 /* APPLE_LICENSE */,
+				B0AB8F981CA580F4001649D2 /* arp.tproj */,
+				B0AB8F991CA580F4001649D2 /* cfilutil */,
+				B0AB8F9A1CA580F4001649D2 /* dnctl */,
+				B0AB8F9B1CA580F4001649D2 /* ecnprobe */,
+				B0AB8F9C1CA580F4001649D2 /* ifconfig.tproj */,
+				B0AB8F9D1CA580F4001649D2 /* include */,
+				B0AB8F9E1CA580F4001649D2 /* ip6addrctl.tproj */,
+				B0AB8F9F1CA580F4001649D2 /* ip6fw.tproj */,
+				B0AB8FA01CA580F4001649D2 /* ipfw.tproj */,
+				B0AB8FA11CA580F4001649D2 /* kdumpd.tproj */,
+				B0AB8FA21CA580F4001649D2 /* Makefile */,
+				B0AB8FA31CA580F4001649D2 /* mnc.tproj */,
+				B0AB8FA41CA580F4001649D2 /* mptcp_client */,
+				B0AB8FA51CA580F4001649D2 /* mtest.tproj */,
+				B0AB8FA61CA580F4001649D2 /* natd.tproj */,
+				B0AB8FA71CA580F4001649D2 /* ndp.tproj */,
+				B0AB8FA81CA580F4001649D2 /* netstat.tproj */,
+				B0AB8FA91CA580F4001649D2 /* network-client-server-entitlements.plist */,
+				B0AB8FAA1CA580F4001649D2 /* network_cmds.plist */,
+				B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */,
+				B0AB8FAE1CA580F4001649D2 /* ping.tproj */,
+				B0AB8FAF1CA580F4001649D2 /* ping6.tproj */,
+				B0AB8FB01CA580F4001649D2 /* pktapctl */,
+				B0AB8FB11CA580F4001649D2 /* pktmnglr */,
+				B0AB8FB21CA580F4001649D2 /* rarpd.tproj */,
+				B0AB8FB31CA580F4001649D2 /* route.tproj */,
+				B0AB8FB41CA580F4001649D2 /* rtadvd.tproj */,
+				B0AB8FB51CA580F4001649D2 /* rtsol.tproj */,
+				B0AB8FB61CA580F4001649D2 /* spray.tproj */,
+				B0AB8FB71CA580F4001649D2 /* traceroute.tproj */,
+				B0AB8FB81CA580F4001649D2 /* traceroute6.tproj */,
+				B0AB8FB91CA580F4001649D2 /* unbound */,
+			);
+			sourceTree = "<group>";
+		};
+		B0AB8FAC1CA580F4001649D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0AB8FDB1CA580F4001649D2 /* libalias.A.dylib */,
+				B0AB8FDD1CA580F4001649D2 /* arp */,
+				B0AB8FDF1CA580F4001649D2 /* cfilutil */,
+				B0AB8FE11CA580F4001649D2 /* dnctl */,
+				B0AB8FE31CA580F4001649D2 /* ecnprobe */,
+				B0AB8FE51CA580F4001649D2 /* ifconfig */,
+				B0AB8FE71CA580F4001649D2 /* ip6addrctl */,
+				B0AB8FE91CA580F4001649D2 /* ip6fw */,
+				B0AB8FEB1CA580F4001649D2 /* ipfw */,
+				B0AB8FED1CA580F4001649D2 /* kdumpd */,
+				B0AB8FEF1CA580F4001649D2 /* mnc */,
+				B0AB8FF11CA580F4001649D2 /* mptcp_client */,
+				B0AB8FF31CA580F4001649D2 /* mtest */,
+				B0AB8FF51CA580F4001649D2 /* ndp */,
+				B0AB8FF71CA580F4001649D2 /* natd */,
+				B0AB8FF91CA580F4001649D2 /* netstat */,
+				B0AB8FFB1CA580F4001649D2 /* pktapctl */,
+				B0AB8FFD1CA580F4001649D2 /* pktmnglr */,
+				B0AB8FFF1CA580F4001649D2 /* ping */,
+				B0AB90011CA580F4001649D2 /* ping6 */,
+				B0AB90031CA580F4001649D2 /* rarpd */,
+				B0AB90051CA580F4001649D2 /* route */,
+				B0AB90071CA580F4001649D2 /* rtadvd */,
+				B0AB90091CA580F4001649D2 /* rtsol */,
+				B0AB900B1CA580F4001649D2 /* spray */,
+				B0AB900D1CA580F4001649D2 /* traceroute */,
+				B0AB900F1CA580F4001649D2 /* traceroute6 */,
+				B0AB90111CA580F4001649D2 /* unbound */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		B0AB8F941CA580F4001649D2 /* network_cmds-481.20.1 */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = B0AB90121CA580F4001649D2 /* Build configuration list for PBXLegacyTarget "network_cmds-481.20.1" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/steven/Dropbox/Projects/iOS/MobileTerminal/MobileTerminal/network_cmds-481.20.1";
+			dependencies = (
+			);
+			name = "network_cmds-481.20.1";
+			passBuildSettingsInEnvironment = 1;
+			productName = "network_cmds-481.20.1";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		B0AB8F901CA580F4001649D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = B0AB8F931CA580F4001649D2 /* Build configuration list for PBXProject "network_cmds-481.20.1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B0AB8F8F1CA580F4001649D2;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B0AB8FAC1CA580F4001649D2 /* Products */;
+					ProjectRef = B0AB8FAB1CA580F4001649D2 /* network_cmds.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				B0AB8F941CA580F4001649D2 /* network_cmds-481.20.1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B0AB8FDB1CA580F4001649D2 /* libalias.A.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libalias.A.dylib;
+			remoteRef = B0AB8FDA1CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB8FDD1CA580F4001649D2 /* arp */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = arp;
+			remoteRef = B0AB8FDC1CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB8FDF1CA580F4001649D2 /* cfilutil */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = cfilutil;
+			remoteRef = B0AB8FDE1CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB8FE11CA580F4001649D2 /* dnctl */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dnctl;
+			remoteRef = B0AB8FE01CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB8FE31CA580F4001649D2 /* ecnprobe */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = ecnprobe;
+			remoteRef = B0AB8FE21CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB8FE51CA580F4001649D2 /* ifconfig */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = ifconfig;
+			remoteRef = B0AB8FE41CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB8FE71CA580F4001649D2 /* ip6addrctl */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = ip6addrctl;
+			remoteRef = B0AB8FE61CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB8FE91CA580F4001649D2 /* ip6fw */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = ip6fw;
+			remoteRef = B0AB8FE81CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB8FEB1CA580F4001649D2 /* ipfw */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = ipfw;
+			remoteRef = B0AB8FEA1CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB8FED1CA580F4001649D2 /* kdumpd */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = kdumpd;
+			remoteRef = B0AB8FEC1CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB8FEF1CA580F4001649D2 /* mnc */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = mnc;
+			remoteRef = B0AB8FEE1CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB8FF11CA580F4001649D2 /* mptcp_client */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = mptcp_client;
+			remoteRef = B0AB8FF01CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB8FF31CA580F4001649D2 /* mtest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = mtest;
+			remoteRef = B0AB8FF21CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB8FF51CA580F4001649D2 /* ndp */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = ndp;
+			remoteRef = B0AB8FF41CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB8FF71CA580F4001649D2 /* natd */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = natd;
+			remoteRef = B0AB8FF61CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB8FF91CA580F4001649D2 /* netstat */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = netstat;
+			remoteRef = B0AB8FF81CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB8FFB1CA580F4001649D2 /* pktapctl */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = pktapctl;
+			remoteRef = B0AB8FFA1CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB8FFD1CA580F4001649D2 /* pktmnglr */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = pktmnglr;
+			remoteRef = B0AB8FFC1CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB8FFF1CA580F4001649D2 /* ping */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = ping;
+			remoteRef = B0AB8FFE1CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB90011CA580F4001649D2 /* ping6 */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = ping6;
+			remoteRef = B0AB90001CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB90031CA580F4001649D2 /* rarpd */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = rarpd;
+			remoteRef = B0AB90021CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB90051CA580F4001649D2 /* route */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = route;
+			remoteRef = B0AB90041CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB90071CA580F4001649D2 /* rtadvd */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = rtadvd;
+			remoteRef = B0AB90061CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB90091CA580F4001649D2 /* rtsol */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = rtsol;
+			remoteRef = B0AB90081CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB900B1CA580F4001649D2 /* spray */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = spray;
+			remoteRef = B0AB900A1CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB900D1CA580F4001649D2 /* traceroute */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = traceroute;
+			remoteRef = B0AB900C1CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB900F1CA580F4001649D2 /* traceroute6 */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = traceroute6;
+			remoteRef = B0AB900E1CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0AB90111CA580F4001649D2 /* unbound */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = unbound;
+			remoteRef = B0AB90101CA580F4001649D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin XCBuildConfiguration section */
+		B0AB8F911CA580F4001649D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		B0AB8F921CA580F4001649D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		B0AB90131CA580F4001649D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "network_cmds-481.20.1";
+			};
+			name = Debug;
+		};
+		B0AB90141CA580F4001649D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "network_cmds-481.20.1";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0AB8F931CA580F4001649D2 /* Build configuration list for PBXProject "network_cmds-481.20.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0AB8F911CA580F4001649D2 /* Debug */,
+				B0AB8F921CA580F4001649D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0AB90121CA580F4001649D2 /* Build configuration list for PBXLegacyTarget "network_cmds-481.20.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0AB90131CA580F4001649D2 /* Debug */,
+				B0AB90141CA580F4001649D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0AB8F901CA580F4001649D2 /* Project object */;
+}

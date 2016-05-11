@@ -1,0 +1,19 @@
+//
+//  Shared.pch
+//  MobileTerminal
+//
+//  Created by Steven Troughton-Smith on 23/03/2016.
+//  Copyright © 2016 High Caffeine Content. All rights reserved.
+//
+
+#ifndef Shared_h
+#define Shared_h
+
+//#define exit(x) {return x;}
+//#define printf(...) NSLog(...)
+
+//int	mt_printf(const char * __restrict, ...);
+
+
+#endif /* Shared_h */
+
