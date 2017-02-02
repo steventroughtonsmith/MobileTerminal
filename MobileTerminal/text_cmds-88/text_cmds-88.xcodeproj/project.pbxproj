@@ -241,7 +241,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B052631A1CA50CFE00877C1C /* .DS_Store */ = {isa = PBXFileReference; lastKnownFileType = file; path = .DS_Store; sourceTree = "<group>"; };
 		B052631B1CA50CFE00877C1C /* banner */ = {isa = PBXFileReference; lastKnownFileType = folder; path = banner; sourceTree = "<group>"; };
 		B052631C1CA50CFE00877C1C /* cat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cat; sourceTree = "<group>"; };
 		B052631D1CA50CFE00877C1C /* col */ = {isa = PBXFileReference; lastKnownFileType = folder; path = col; sourceTree = "<group>"; };
@@ -285,7 +284,6 @@
 		B05263141CA50CFE00877C1C = {
 			isa = PBXGroup;
 			children = (
-				B052631A1CA50CFE00877C1C /* .DS_Store */,
 				B052631B1CA50CFE00877C1C /* banner */,
 				B052631C1CA50CFE00877C1C /* cat */,
 				B052631D1CA50CFE00877C1C /* col */,
@@ -416,7 +414,6 @@
 		B05263651CA50CFE00877C1C /* text_cmds */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
-			name = text_cmds;
 			path = banner;
 			remoteRef = B05263641CA50CFE00877C1C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -431,7 +428,6 @@
 		B05263691CA50CFE00877C1C /* cat copy */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
-			name = "cat copy";
 			path = col;
 			remoteRef = B05263681CA50CFE00877C1C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;

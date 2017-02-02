@@ -33,9 +33,9 @@
 //	  self.tableView.cellLayoutMarginsFollowReadableWidth = YES;
 	  
 //	  self.view.backgroundColor = [UIColor blackColor];
-//	  self.view.opaque = YES;
+	  self.view.opaque = YES;
 //	  [self.tableView setBackgroundView:nil];
-//	  self.tableView.opaque = YES;
+	  self.tableView.opaque = YES;
 	 //[colorMap background]];
     [self.tableView setAllowsSelection:NO];
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
@@ -163,7 +163,7 @@
   [tableView setNeedsDisplay];  
   // Scrolling to the bottom with animations looks much nicer, but will not
   // work if the table cells have not finished loading yet.
-  [self scrollToBottom:NO];
+  // [self scrollToBottom:NO];
 }
 
 @end

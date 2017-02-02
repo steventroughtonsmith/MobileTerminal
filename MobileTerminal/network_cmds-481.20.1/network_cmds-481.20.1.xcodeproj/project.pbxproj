@@ -206,7 +206,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B0AB8F951CA580F4001649D2 /* .DS_Store */ = {isa = PBXFileReference; lastKnownFileType = file; path = .DS_Store; sourceTree = "<group>"; };
 		B0AB8F961CA580F4001649D2 /* alias */ = {isa = PBXFileReference; lastKnownFileType = folder; path = alias; sourceTree = "<group>"; };
 		B0AB8F971CA580F4001649D2 /* APPLE_LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = APPLE_LICENSE; sourceTree = "<group>"; };
 		B0AB8F981CA580F4001649D2 /* arp.tproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = arp.tproj; sourceTree = "<group>"; };
@@ -247,7 +246,6 @@
 		B0AB8F8F1CA580F4001649D2 = {
 			isa = PBXGroup;
 			children = (
-				B0AB8F951CA580F4001649D2 /* .DS_Store */,
 				B0AB8F961CA580F4001649D2 /* alias */,
 				B0AB8F971CA580F4001649D2 /* APPLE_LICENSE */,
 				B0AB8F981CA580F4001649D2 /* arp.tproj */,

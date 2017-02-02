@@ -1,34 +1,26 @@
 //
-//  Interpose.m
-//  MobileTerminal
+//  main.m
+//  FindEntryPointOfImage
 //
-//  Created by Steven Troughton-Smith on 23/03/2016.
+//  Created by Steven Troughton-Smith on 08/10/2016.
 //  Copyright © 2016 High Caffeine Content. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-
-#include <stdio.h>
-#include <unistd.h>
-#include <fcntl.h>
-#include <stdlib.h>
-#include <pthread.h>
-#include <dlfcn.h>
 #import <mach-o/loader.h>
 #import <mach-o/dyld.h>
 #import <mach-o/arch.h>
+#import <dlfcn.h>
 
-int MT_PID = 0;
-
-int callEntryPointOfImage(char *path, int argc, char **argv)
+int findEntryPointOfImage(char *path, int argc, char **argv)
 {
 	void *handle;
 	int (*binary_main)(int binary_argc, char **binary_argv);
 	char *error;
 	int err = 0;
 	
-//	printf("Loading %s…\n", path);
+	printf("Loading %s…\n", path);
 	
 	handle = dlopen (path, RTLD_LAZY);
 	if (!handle) {
@@ -56,7 +48,7 @@ int callEntryPointOfImage(char *path, int argc, char **argv)
 			
 			if (header->magic == MH_MAGIC_64)
 			{
-//				printf("MH_MAGIC_64\n");
+				printf("MH_MAGIC_64\n");
 				const struct mach_header_64 *header64 = (struct mach_header_64 *)_dyld_get_image_header(i);
 				
 				uint8_t *imageHeaderPtr = (uint8_t*)header64;
@@ -72,7 +64,7 @@ int callEntryPointOfImage(char *path, int argc, char **argv)
 						struct entry_point_command ucmd = *(struct entry_point_command*)imageHeaderPtr;
 						
 						entryoff = ucmd.entryoff;
-//						printf("LC_MAIN EntryPoint offset: 0x%llX\n", entryoff);
+						printf("LC_MAIN EntryPoint offset: 0x%llX\n", entryoff);
 						didFind = YES;
 						break;
 					}
@@ -83,7 +75,7 @@ int callEntryPointOfImage(char *path, int argc, char **argv)
 			}
 			else
 			{
-//				printf("MH_MAGIC\n");
+				printf("MH_MAGIC\n");
 				
 				const struct mach_header *header = (struct mach_header *)_dyld_get_image_header(i);
 				
@@ -100,7 +92,7 @@ int callEntryPointOfImage(char *path, int argc, char **argv)
 						struct entry_point_command ucmd = *(struct entry_point_command*)imageHeaderPtr;
 						
 						entryoff = ucmd.entryoff;
-//						printf("LC_MAIN EntryPoint offset: 0x%llX\n", entryoff);
+						printf("LC_MAIN EntryPoint offset: 0x%llX\n", entryoff);
 						
 						didFind = YES;
 						break;
@@ -111,7 +103,7 @@ int callEntryPointOfImage(char *path, int argc, char **argv)
 				}
 			}
 			
-//			printf("Found %s\n",  dyld);
+			printf("Found %s\n",  dyld);
 			
 			if (didFind)
 			{
@@ -134,7 +126,7 @@ int callEntryPointOfImage(char *path, int argc, char **argv)
 		{
 			setprogname([[NSString stringWithUTF8String:path].lastPathComponent UTF8String]);
 			
-			returnCode = (*binary_main)(argc, argv);
+			//returnCode = (*binary_main)(argc, argv);
 			//printf ("exit(%i)\n", (*binary_main)(argc, argv));
 			dlclose(handle);
 		}
@@ -148,62 +140,9 @@ int callEntryPointOfImage(char *path, int argc, char **argv)
 }
 
 
-typedef struct interpose_s { void *new_func;
-	void *orig_func; } interpose_t;
-
-//extern void UIApplicationInstantiateSingleton(Class c);
-
-void my_exit(int size);
-pid_t my_fork();
-pid_t my_getpid();
-int my_execve(const char *path, char *const argv[]);
-
-//void my_UIApplicationInstantiateSingleton(Class c);
-
-static const interpose_t interposing_functions[] \
-__attribute__ ((used, section("__DATA, __interpose"))) = {
-	
- { (void *)my_exit, (void *)exit},
-	{ (pid_t *)my_fork, (void *)fork},
-	{ (pid_t *)my_getpid, (void *)getpid},
-
-	{ (int *)my_execve, (void *)execv},
-	{ (int *)my_execve, (void *)execvp}
-
-//(void *) my_UIApplicationInstantiateSingleton, (void *)UIApplicationInstantiateSingleton
-
-};
-
-pid_t my_getpid()
-{
-	return MT_PID;
-}
-
-pid_t my_fork ()
-{
-	MT_PID++;
-	printf("fork() -> %i\n",MT_PID);
-	return MT_PID;
-}
-
-int my_execve(const char *path, char *const argv[])
-{
-	int args = 0;
-	
-	while (argv[args] != 0)
-		args++;
-	
-	return callEntryPointOfImage((char *)path, args, (char **)argv);
-}
-
-
-void my_exit (int errcode)
-{
-	if (errcode == SIGTERM)
-	{
-		//printf("Exited %i.\n", errcode);
+int main(int argc, const char * argv[]) {
+	@autoreleasepool {
+		findEntryPointOfImage("/Developer/usr/bin/iprofiler",0,"");
 	}
-	fflush(stdout);
-	fflush(stderr);
-	pthread_exit(NULL);
+    return 0;
 }

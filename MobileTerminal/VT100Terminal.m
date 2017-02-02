@@ -29,7 +29,7 @@
 
 #import "VT100Terminal.h"
 
-#include <term.h>
+#include "term.h"
 #import "VT100Screen.h"
 
 #define DEBUG_METHOD_TRACE 0

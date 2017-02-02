@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B012C0F81DA971AE00085AAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B012C0F71DA971AE00085AAE /* main.m */; };
+		B012C1101DA976E000085AAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B012C10F1DA976E000085AAE /* AppDelegate.m */; };
+		B012C1131DA976E000085AAE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B012C1121DA976E000085AAE /* ViewController.m */; };
+		B012C1161DA976E000085AAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B012C1141DA976E000085AAE /* Main.storyboard */; };
+		B012C1181DA976E000085AAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B012C1171DA976E000085AAE /* Assets.xcassets */; };
+		B012C11B1DA976E000085AAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B012C1191DA976E000085AAE /* LaunchScreen.storyboard */; };
+		B012C1211DA976E700085AAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B012C0F71DA971AE00085AAE /* main.m */; };
 		B05262BB1CA5068600877C1C /* bin in CopyFiles */ = {isa = PBXBuildFile; fileRef = B05262BA1CA5068100877C1C /* bin */; };
 		B0B605001CA23C8400DFBC5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B604FF1CA23C8400DFBC5C /* main.m */; };
 		B0B605031CA23C8400DFBC5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B605021CA23C8400DFBC5C /* AppDelegate.m */; };
@@ -74,6 +81,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		B012C0F31DA971AE00085AAE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		B0B60A911CA28C6400DFBC5C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -108,10 +124,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B012C0F51DA971AE00085AAE /* FindEntryPointOfImage */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FindEntryPointOfImage; sourceTree = BUILT_PRODUCTS_DIR; };
+		B012C0F71DA971AE00085AAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B012C1091DA976DF00085AAE /* MobileFindEntryPointOfImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileFindEntryPointOfImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B012C10C1DA976E000085AAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B012C10E1DA976E000085AAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B012C10F1DA976E000085AAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B012C1111DA976E000085AAE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B012C1121DA976E000085AAE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B012C1151DA976E000085AAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B012C1171DA976E000085AAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B012C11A1DA976E000085AAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B012C11C1DA976E000085AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B045EE331CA4DDC600CEA3B0 /* file_cmds-251.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "file_cmds-251.xcodeproj"; path = "file_cmds-251/file_cmds-251.xcodeproj"; sourceTree = "<group>"; };
 		B05262BA1CA5068100877C1C /* bin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bin; sourceTree = "<group>"; };
 		B052630E1CA507AD00877C1C /* adv_cmds-163.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "adv_cmds-163.xcodeproj"; path = "adv_cmds-163/adv_cmds-163.xcodeproj"; sourceTree = "<group>"; };
 		B05263A91CA50CFE00877C1C /* text_cmds-88.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "text_cmds-88.xcodeproj"; path = "text_cmds-88/text_cmds-88.xcodeproj"; sourceTree = "<group>"; };
+		B081A22F1E42D92F005F3D2A /* term.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = term.h; sourceTree = "<group>"; };
+		B081A2301E42DE21005F3D2A /* ncurses_dll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ncurses_dll.h; sourceTree = "<group>"; };
 		B0AB90151CA580F5001649D2 /* network_cmds-481.20.1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "network_cmds-481.20.1.xcodeproj"; path = "network_cmds-481.20.1/network_cmds-481.20.1.xcodeproj"; sourceTree = "<group>"; };
 		B0B604FB1CA23C8400DFBC5C /* MobileTerminal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileTerminal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B604FF1CA23C8400DFBC5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -161,6 +191,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B012C0F21DA971AE00085AAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B012C1061DA976DF00085AAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0B604F81CA23C8400DFBC5C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,6 +232,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B012C0F61DA971AE00085AAE /* FindEntryPointOfImage */ = {
+			isa = PBXGroup;
+			children = (
+				B012C0F71DA971AE00085AAE /* main.m */,
+			);
+			path = FindEntryPointOfImage;
+			sourceTree = "<group>";
+		};
+		B012C10A1DA976E000085AAE /* MobileFindEntryPointOfImage */ = {
+			isa = PBXGroup;
+			children = (
+				B012C10E1DA976E000085AAE /* AppDelegate.h */,
+				B012C10F1DA976E000085AAE /* AppDelegate.m */,
+				B012C1111DA976E000085AAE /* ViewController.h */,
+				B012C1121DA976E000085AAE /* ViewController.m */,
+				B012C1141DA976E000085AAE /* Main.storyboard */,
+				B012C1171DA976E000085AAE /* Assets.xcassets */,
+				B012C1191DA976E000085AAE /* LaunchScreen.storyboard */,
+				B012C11C1DA976E000085AAE /* Info.plist */,
+				B012C10B1DA976E000085AAE /* Supporting Files */,
+			);
+			path = MobileFindEntryPointOfImage;
+			sourceTree = "<group>";
+		};
+		B012C10B1DA976E000085AAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B012C10C1DA976E000085AAE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B045EE341CA4DDC600CEA3B0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +298,8 @@
 				B0B604FD1CA23C8400DFBC5C /* MobileTerminal */,
 				B0B60A941CA28C6400DFBC5C /* VT100 */,
 				B0B89DB31CA33D3000BB7650 /* Interpose */,
+				B012C0F61DA971AE00085AAE /* FindEntryPointOfImage */,
+				B012C10A1DA976E000085AAE /* MobileFindEntryPointOfImage */,
 				B0B604FC1CA23C8400DFBC5C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -232,6 +310,8 @@
 				B0B604FB1CA23C8400DFBC5C /* MobileTerminal.app */,
 				B0B60A931CA28C6400DFBC5C /* libVT100.a */,
 				B0B89DB21CA33D2F00BB7650 /* Interpose.framework */,
+				B012C0F51DA971AE00085AAE /* FindEntryPointOfImage */,
+				B012C1091DA976DF00085AAE /* MobileFindEntryPointOfImage.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -275,6 +355,8 @@
 		B0B60A6F1CA28B1300DFBC5C /* VT100 */ = {
 			isa = PBXGroup;
 			children = (
+				B081A2301E42DE21005F3D2A /* ncurses_dll.h */,
+				B081A22F1E42D92F005F3D2A /* term.h */,
 				B0B60AA11CA29B0A00DFBC5C /* PTY.h */,
 				B0B60AA21CA29B0A00DFBC5C /* PTY.m */,
 				B0B60A701CA28B1E00DFBC5C /* charmaps.h */,
@@ -334,6 +416,40 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		B012C0F41DA971AE00085AAE /* FindEntryPointOfImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B012C0FC1DA971AE00085AAE /* Build configuration list for PBXNativeTarget "FindEntryPointOfImage" */;
+			buildPhases = (
+				B012C0F11DA971AE00085AAE /* Sources */,
+				B012C0F21DA971AE00085AAE /* Frameworks */,
+				B012C0F31DA971AE00085AAE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindEntryPointOfImage;
+			productName = FindEntryPointOfImage;
+			productReference = B012C0F51DA971AE00085AAE /* FindEntryPointOfImage */;
+			productType = "com.apple.product-type.tool";
+		};
+		B012C1081DA976DF00085AAE /* MobileFindEntryPointOfImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B012C1201DA976E000085AAE /* Build configuration list for PBXNativeTarget "MobileFindEntryPointOfImage" */;
+			buildPhases = (
+				B012C1051DA976DF00085AAE /* Sources */,
+				B012C1061DA976DF00085AAE /* Frameworks */,
+				B012C1071DA976DF00085AAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobileFindEntryPointOfImage;
+			productName = MobileFindEntryPointOfImage;
+			productReference = B012C1091DA976DF00085AAE /* MobileFindEntryPointOfImage.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B0B604FA1CA23C8400DFBC5C /* MobileTerminal */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0B605121CA23C8400DFBC5C /* Build configuration list for PBXNativeTarget "MobileTerminal" */;
@@ -341,7 +457,6 @@
 				B0B604F71CA23C8400DFBC5C /* Sources */,
 				B0B604F81CA23C8400DFBC5C /* Frameworks */,
 				B0B604F91CA23C8400DFBC5C /* Resources */,
-				B0B60A8E1CA28C0D00DFBC5C /* ShellScript */,
 				B0B89DBE1CA33D3000BB7650 /* Embed Frameworks */,
 				B0F60F8F1CA3CB2C00329EDD /* CopyFiles */,
 			);
@@ -404,6 +519,16 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "High Caffeine Content";
 				TargetAttributes = {
+					B012C0F41DA971AE00085AAE = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2ZDN69KUUV;
+						ProvisioningStyle = Automatic;
+					};
+					B012C1081DA976DF00085AAE = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2ZDN69KUUV;
+						ProvisioningStyle = Automatic;
+					};
 					B0B604FA1CA23C8400DFBC5C = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 2ZDN69KUUV;
@@ -413,6 +538,8 @@
 					};
 					B0B89DB11CA33D2F00BB7650 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2ZDN69KUUV;
+						DevelopmentTeamName = "Steven Troughton-Smith";
 					};
 				};
 			};
@@ -450,11 +577,23 @@
 				B0B604FA1CA23C8400DFBC5C /* MobileTerminal */,
 				B0B60A921CA28C6400DFBC5C /* VT100 */,
 				B0B89DB11CA33D2F00BB7650 /* Interpose */,
+				B012C0F41DA971AE00085AAE /* FindEntryPointOfImage */,
+				B012C1081DA976DF00085AAE /* MobileFindEntryPointOfImage */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B012C1071DA976DF00085AAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B012C11B1DA976E000085AAE /* LaunchScreen.storyboard in Resources */,
+				B012C1181DA976E000085AAE /* Assets.xcassets in Resources */,
+				B012C1161DA976E000085AAE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0B604F91CA23C8400DFBC5C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -475,19 +614,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B0B60A8E1CA28C0D00DFBC5C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#\n# When compiling for the device, copy term.h from the simulator SDK\n#\n\nif [ $PLATFORM_NAME == \"iphoneos\" ]\nthen\n# Get the path to the iphone simulator SDK for the same version\nSIMULATOR_SDK_DIR=${SDK_DIR//iPhoneOS/iPhoneSimulator}\n    \n    # Copy to a temporary directory where the build will find the needed\n    # header files.  This directory may not already exist, but is passed\n    # as a header search path when compiling the source files.\n    mkdir -p $DERIVED_SOURCES_DIR\n    cp $SIMULATOR_SDK_DIR/usr/include/ncurses_dll.h $DERIVED_SOURCES_DIR/\n    cp $SIMULATOR_SDK_DIR/usr/include/term.h $DERIVED_SOURCES_DIR/\n\n    fi";
-		};
 		B0B60A9C1CA28C6800DFBC5C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -504,6 +630,24 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B012C0F11DA971AE00085AAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B012C0F81DA971AE00085AAE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B012C1051DA976DF00085AAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B012C1131DA976E000085AAE /* ViewController.m in Sources */,
+				B012C1101DA976E000085AAE /* AppDelegate.m in Sources */,
+				B012C1211DA976E700085AAE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0B604F71CA23C8400DFBC5C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -572,6 +716,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		B012C1141DA976E000085AAE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B012C1151DA976E000085AAE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B012C1191DA976E000085AAE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B012C11A1DA976E000085AAE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		B0B605071CA23C8400DFBC5C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -591,6 +751,76 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B012C0F91DA971AE00085AAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				VALID_ARCHS = "armv7s armv7 x86_64 i386";
+			};
+			name = Debug;
+		};
+		B012C0FA1DA971AE00085AAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				VALID_ARCHS = "armv7s armv7 x86_64 i386";
+			};
+			name = Release;
+		};
+		B012C11D1DA976E000085AAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				INFOPLIST_FILE = MobileFindEntryPointOfImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.MobileFindEntryPointOfImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7s armv7 arm64";
+			};
+			name = Debug;
+		};
+		B012C11E1DA976E000085AAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				INFOPLIST_FILE = MobileFindEntryPointOfImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.MobileFindEntryPointOfImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7s armv7 arm64";
+			};
+			name = Release;
+		};
 		B0B605101CA23C8400DFBC5C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -684,11 +914,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = MobileTerminal/Shared.pch;
 				INFOPLIST_FILE = MobileTerminal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.MobileTerminal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -697,11 +929,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = MobileTerminal/Shared.pch;
 				INFOPLIST_FILE = MobileTerminal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.MobileTerminal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -768,6 +1002,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B012C0FC1DA971AE00085AAE /* Build configuration list for PBXNativeTarget "FindEntryPointOfImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B012C0F91DA971AE00085AAE /* Debug */,
+				B012C0FA1DA971AE00085AAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B012C1201DA976E000085AAE /* Build configuration list for PBXNativeTarget "MobileFindEntryPointOfImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B012C11D1DA976E000085AAE /* Debug */,
+				B012C11E1DA976E000085AAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B0B604F61CA23C8400DFBC5C /* Build configuration list for PBXProject "MobileTerminal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

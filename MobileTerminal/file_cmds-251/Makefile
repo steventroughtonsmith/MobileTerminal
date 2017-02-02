@@ -165,7 +165,7 @@ pre:
 
 sign:
 	export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/../bin/codesign_allocate
-	xcrun codesign -f -s $(SIGNING_IDENTITY) --entitlements Entitlements.xcent --preserve-metadata=identifier,entitlements --timestamp=none ../bin/ls ../bin/cp ../bin/mkdir ../bin/rm ../bin/unlink ../bin/mv ../bin/dd ../bin/ln ../bin/link ../bin/symlink ../bin/gzip ../bin/gunzip ../bin/df ../bin/chmod ../bin/chown ../bin/chgrp ../bin/chflags ../bin/touch ../bin/cksum ../bin/sum ../bin/rmdir ../bin/du ../bin/stat ../bin/readlink ../bin/pathchk ../bin/mknod ../bin/ipcs ../bin/ipcrm ../bin/install ../bin/compress ../bin/uncompress ../bin/zopen ../bin/zcat ../bin/mkfifo ../bin/mtree
+	xcrun codesign -f -s $(SIGNING_IDENTITY) --preserve-metadata=identifier,entitlements --timestamp=none ../bin/ls ../bin/cp ../bin/mkdir ../bin/rm ../bin/unlink ../bin/mv ../bin/dd ../bin/ln ../bin/link ../bin/symlink ../bin/gzip ../bin/gunzip ../bin/df ../bin/chmod ../bin/chown ../bin/chgrp ../bin/chflags ../bin/touch ../bin/cksum ../bin/sum ../bin/rmdir ../bin/du ../bin/stat ../bin/readlink ../bin/pathchk ../bin/mknod ../bin/ipcs ../bin/ipcrm ../bin/install ../bin/compress ../bin/uncompress ../bin/zopen ../bin/zcat ../bin/mkfifo ../bin/mtree
  
 
 %.o:%.c

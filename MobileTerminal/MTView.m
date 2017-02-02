@@ -31,7 +31,7 @@ NSUInteger _textBufferIdx = 0;
 	unsigned count = (unsigned)[self count];
 	char **array = (char **)malloc((count + 1) * sizeof(char*));
 	memset(array, 0, count * sizeof(char));
-
+	
 	for (unsigned i = 0; i < count; i++)
 	{
 		array[i] = strdup([[self objectAtIndex:i] UTF8String]);
@@ -49,10 +49,10 @@ struct threadParams {
 void processCommand(void *context)
 {
 	
-//	struct threadParams *p = context;
+	//	struct threadParams *p = context;
 	
-//	freopen([[NSString stringWithFormat:@"%@/mt_stdout.txt", NSTemporaryDirectory()] UTF8String], "a+", stdout);
-//	freopen([[NSString stringWithFormat:@"%@/mt_stdout.txt", NSTemporaryDirectory()] UTF8String], "a+", stderr);
+	//	freopen([[NSString stringWithFormat:@"%@/mt_stdout.txt", NSTemporaryDirectory()] UTF8String], "a+", stdout);
+	//	freopen([[NSString stringWithFormat:@"%@/mt_stdout.txt", NSTemporaryDirectory()] UTF8String], "a+", stderr);
 	
 	//[NSString stringWithUTF8String:_textBuffer]
 	NSArray *components = [[NSString stringWithUTF8String:_textBuffer] componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" "]];
@@ -90,15 +90,15 @@ void processCommand(void *context)
 	//	{
 	//	}
 	
-//	MTBackupDataSegment();
+	//	MTBackupDataSegment();
 	
 	NSArray *builtinCommands = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"bin"] error:nil];
 	
-
 	
 	
-//	MTRestoreDataSegment();
-
+	
+	//	MTRestoreDataSegment();
+	
 	if ([components[0] isEqualToString:@"cd"])
 	{
 		if (strcmp(argv[1],"~")==0)
@@ -115,7 +115,7 @@ void processCommand(void *context)
 	if ([components[0] isEqualToString:@"clear"])
 	{
 		printf("\e[2J\e[H");
-//		[textView clearScreen];
+		//		[textView clearScreen];
 	}
 	
 	if ([components[0] isEqualToString:@"help"])
@@ -141,10 +141,10 @@ void processCommand(void *context)
 			NSString *fullPath = [[NSString stringWithUTF8String:buf] stringByAppendingPathComponent:[components[0] substringFromIndex:1]];
 			
 			callEntryPointOfImage(fullPath.UTF8String, argc, argv);
-
+			
 		}
 		else
-		
+			
 			callEntryPointOfImage([components[0] UTF8String], argc, argv);
 	}
 	
@@ -154,7 +154,7 @@ void processCommand(void *context)
 	}
 	else if ([components[0] length])
 	{
-//		printf("- %s: command not found\n", [components[0] UTF8String]);
+		//		printf("- %s: command not found\n", [components[0] UTF8String]);
 	}
 	
 	
@@ -169,18 +169,18 @@ void processCommand(void *context)
 
 -(void)tick
 {
-//	NSFileHandle *input = [NSFileHandle fileHandleForReadingAtPath:[NSString stringWithFormat:@"%@/mt_stdout.txt",NSTemporaryDirectory()]];
-//	NSData *inputData = [NSData dataWithData:[input readDataToEndOfFile]];
-//	NSString *inputString = [[NSString alloc] initWithData:inputData encoding:NSUTF8StringEncoding];
-//
-//		if (inputString)
-//			textView.text = inputString;
-//
+	//	NSFileHandle *input = [NSFileHandle fileHandleForReadingAtPath:[NSString stringWithFormat:@"%@/mt_stdout.txt",NSTemporaryDirectory()]];
+	//	NSData *inputData = [NSData dataWithData:[input readDataToEndOfFile]];
+	//	NSString *inputString = [[NSString alloc] initWithData:inputData encoding:NSUTF8StringEncoding];
+	//
+	//		if (inputString)
+	//			textView.text = inputString;
+	//
 	
 	/*
-	NSString *s = [NSString stringWithContentsOfFile:[NSString stringWithFormat:@"%@/mt_stdout.txt", NSTemporaryDirectory()]  usedEncoding:nil error:nil];
-
-	if (s)
+	 NSString *s = [NSString stringWithContentsOfFile:[NSString stringWithFormat:@"%@/mt_stdout.txt", NSTemporaryDirectory()]  usedEncoding:nil error:nil];
+	 
+	 if (s)
 		textView.text = s;*/
 	
 	
@@ -195,7 +195,7 @@ void processCommand(void *context)
 	// Send the terminal the actual size of our vt100 view.  This should be
 	// called any time we change the size of the view.  This should be a no-op if
 	// the size has not changed since the last time we called it.
-//	[pty setWidth:[textView width] withHeight:[textView height]];
+	//	[pty setWidth:[textView width] withHeight:[textView height]];
 }
 
 
@@ -203,37 +203,37 @@ void processCommand(void *context)
 {
 	self = [super initWithCoder:coder];
 	if (self) {
+		[@"\n" writeToFile:[NSString stringWithFormat:@"%@/mt_stdout.txt", NSTemporaryDirectory()] atomically:NO encoding:NSUTF8StringEncoding error:nil];
 		stdOutHandle = [NSFileHandle fileHandleForReadingAtPath:[NSString stringWithFormat:@"%@/mt_stdout.txt", NSTemporaryDirectory()]];
 		commandHistory = [NSMutableArray arrayWithCapacity:3];
 		
-//		_textBuffer = malloc(8096*sizeof(char));
+		//		_textBuffer = malloc(8096*sizeof(char));
 		memset(_textBuffer, 0, 1024*sizeof(char));
-
-	
-//		freopen([[NSString stringWithFormat:@"%@/mt_stdout.txt", NSTemporaryDirectory()] UTF8String], "a+", stdin);
-
 		
-//		textBuffer = [NSMutableString string];
+		
+		//		freopen([[NSString stringWithFormat:@"%@/mt_stdout.txt", NSTemporaryDirectory()] UTF8String], "a+", stdin);
+		
+		
+		//		textBuffer = [NSMutableString string];
 		textView = [[VT100TextView alloc] initWithFrame:self.bounds];
 		//pty = [[PTY alloc] initWithFileHandle:stdOutHandle];
-
+		
 		self.backgroundColor = [UIColor blackColor];
 		self.opaque = YES;
-//
+		//
 		textView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
-
+		
 		
 		[textView setFont:[UIFont fontWithName:@"Courier New" size:18]];
-//		[textView setNeedsLayout];
+		//		[textView setNeedsLayout];
 		
 		
-		[@"\n" writeToFile:[NSString stringWithFormat:@"%@/mt_stdout.txt", NSTemporaryDirectory()] atomically:NO encoding:NSUTF8StringEncoding error:nil];
-
 		
-//		link = [CADisplayLink displayLinkWithTarget:self selector:@selector(tick)];
-//		link.frameInterval = 2;
-//		
-//		[link addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
+		
+		//		link = [CADisplayLink displayLinkWithTarget:self selector:@selector(tick)];
+		//		link.frameInterval = 2;
+		//
+		//		[link addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
 		
 		
 		NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -241,7 +241,7 @@ void processCommand(void *context)
 		
 		chdir(basePath.UTF8String);
 		
-//		[[NSFileManager defaultManager] copyItemAtPath:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"bin/ls"] toPath:[basePath stringByAppendingPathComponent:@"ls"] error:nil];
+		//		[[NSFileManager defaultManager] copyItemAtPath:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"bin/ls"] toPath:[basePath stringByAppendingPathComponent:@"ls"] error:nil];
 		
 		[[NSNotificationCenter defaultCenter] addObserver:self
 												 selector:@selector(dataAvailable:)
@@ -249,13 +249,13 @@ void processCommand(void *context)
 												   object:stdOutHandle];
 		
 		[stdOutHandle readInBackgroundAndNotify];
-
+		
 		[textView clearScreen];
-
+		
 		[self addSubview:textView];
 		
-
-
+		
+		
 	}
 	return self;
 }
@@ -277,12 +277,12 @@ void processCommand(void *context)
 		// don't restart automatically in case of (b), which would put us in an
 		// infinite loop.  Print a message on the screen with instructions on how
 		// to restart the process.
-//		NSData* message = [NSData dataWithBytes:kProcessExitedMessage
-//										 length:strlen(kProcessExitedMessage)];
-//		[textView readInputStream:message];
-//		[self releaseSubProcess];
+		//		NSData* message = [NSData dataWithBytes:kProcessExitedMessage
+		//										 length:strlen(kProcessExitedMessage)];
+		//		[textView readInputStream:message];
+		//		[self releaseSubProcess];
 		[stdOutHandle readInBackgroundAndNotify];
-
+		
 		return;
 	}
 	
@@ -300,17 +300,17 @@ void processCommand(void *context)
 //	{
 //		uint8_t buf[1024];
 //		[aStream read:&buf maxLength:1024];
-//		
+//
 //		/*
 //		NSString *readBuffer = [NSString stringWithUTF8String:buf];
-//		
+//
 //		if (readBuffer)
 //			textView.text = [textView.text stringByAppendingString:readBuffer];
 //		*/
-//		
+//
 //		[textView readInputStream:[NSData dataWithBytes:buf length:1024]];
 //
-//		
+//
 //		NSLog(@"bytes = %s", buf);
 //	}
 //}
@@ -322,16 +322,16 @@ void processCommand(void *context)
 		// Redirection code
 		//		[@"" writeToFile:[NSString stringWithFormat:@"%@/mt_stdout.txt", NSTemporaryDirectory()] atomically:NO encoding:NSUTF8StringEncoding error:nil];
 		
-//		freopen([[NSString stringWithFormat:@"%@/mt_stdout.txt", NSTemporaryDirectory()] UTF8String], "a+", stderr);
+		//		freopen([[NSString stringWithFormat:@"%@/mt_stdout.txt", NSTemporaryDirectory()] UTF8String], "a+", stderr);
 		//
 		
-//		fflush(stderr);
+		//		fflush(stderr);
 		
 		//		printf("wtf why aren''t you working?");
 		
 	}
 	
-//	printf("y u no work?");
+	//	printf("y u no work?");
 }
 
 -(BOOL)canBecomeFirstResponder
@@ -347,18 +347,18 @@ void processCommand(void *context)
 	if (strcmp(text.UTF8String,"\n")==0)
 	{
 		printf("\r\n");
-
-//		NSLog(@"processCommand %@", textBuffer);
+		
+		//		NSLog(@"processCommand %@", textBuffer);
 		[self processCommand];
 	}
 	else
 	{
-		printf(text.UTF8String);
+		printf("%s", text.UTF8String);
 		
 		_textBuffer[_textBufferIdx++] = text.UTF8String[0];
 		
-//		
-//		[textBuffer appendString:text];
+		//
+		//		[textBuffer appendString:text];
 	}
 	
 	fflush(stdout);
@@ -374,9 +374,9 @@ void processCommand(void *context)
 	}
 	
 	fflush(stdout);
-
-//	if (textBuffer.length)
-//		[textBuffer deleteCharactersInRange:NSMakeRange(textBuffer.length-1, 1)];
+	
+	//	if (textBuffer.length)
+	//		[textBuffer deleteCharactersInRange:NSMakeRange(textBuffer.length-1, 1)];
 }
 
 
@@ -398,7 +398,7 @@ _historyMax = 0;
 	
 	
 	pthread_create(&processThread, NULL, processCommand, NULL);
-
+	
 	
 	_textBufferIdx = 0;
 	_historyIndex++;
@@ -431,7 +431,7 @@ _historyMax = 0;
 		_textBufferIdx = [commandHistory[_historyIndex] length]-1;
 		_textBuffer[_textBufferIdx+1]=0;
 		printf(_textBuffer);
-
+		
 	}
 	fflush(stdout);
 }
@@ -455,7 +455,7 @@ _historyMax = 0;
 				_textBuffer[_textBufferIdx++] = item.UTF8String[i];
 				printf("%c", item.UTF8String[i]);
 			}
-
+			
 			break;
 		}
 	}
@@ -468,18 +468,18 @@ _historyMax = 0;
 	
 	
 	dispatch_async(dispatch_get_global_queue(0, 0), ^{
-//		pthread_mutex_lock(&lock);
-//		pthread_join(processThread,NULL);
+		//		pthread_mutex_lock(&lock);
+		//		pthread_join(processThread,NULL);
 		//pthread_exit(NULL);
 		
 		pthread_kill(processThread, SIGQUIT);
-//		pthread_mutex_unlock(&lock);
+		//		pthread_mutex_unlock(&lock);
 		
 		//		pthread_exit(NULL);
-
+		
 	});
 	//if (pthread_join(processThread,NULL))
-
+	
 	
 	printf("^C\n");
 	fflush(stdout);
@@ -493,8 +493,13 @@ _historyMax = 0;
 			 [UIKeyCommand keyCommandWithInput:UIKeyInputUpArrow modifierFlags:0 action:@selector(upArrow)],
 			 [UIKeyCommand keyCommandWithInput:UIKeyInputDownArrow modifierFlags:0 action:@selector(downArrow)],
 			 [UIKeyCommand keyCommandWithInput:@"	" modifierFlags:0 action:@selector(tab)]
-
+			 
 			 ];
+}
+
+-(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+	[self becomeFirstResponder];
 }
 
 @end

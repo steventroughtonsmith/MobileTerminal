@@ -115,7 +115,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B05262C21CA507AC00877C1C /* .DS_Store */ = {isa = PBXFileReference; lastKnownFileType = file; path = .DS_Store; sourceTree = "<group>"; };
 		B05262C31CA507AC00877C1C /* adv_cmds.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = adv_cmds.xcodeproj; sourceTree = "<group>"; };
 		B05262C61CA507AC00877C1C /* build */ = {isa = PBXFileReference; lastKnownFileType = folder; path = build; sourceTree = "<group>"; };
 		B05262C71CA507AC00877C1C /* cap_mkdb */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cap_mkdb; sourceTree = "<group>"; };
@@ -143,7 +142,6 @@
 		B05262BC1CA507AC00877C1C = {
 			isa = PBXGroup;
 			children = (
-				B05262C21CA507AC00877C1C /* .DS_Store */,
 				B05262C31CA507AC00877C1C /* adv_cmds.xcodeproj */,
 				B05262C61CA507AC00877C1C /* build */,
 				B05262C71CA507AC00877C1C /* cap_mkdb */,
