@@ -197,8 +197,8 @@
 			buildConfigurationList = B052630B1CA507AC00877C1C /* Build configuration list for PBXLegacyTarget "adv_cmds-163" */;
 			buildPhases = (
 			);
-			buildToolPath = /usr/bin/make;
-			buildWorkingDirectory = "/Users/steven/Dropbox/Projects/iOS/MobileTerminal/MobileTerminal/adv_cmds-163";
+			buildToolPath = make;
+			buildWorkingDirectory = "./";
 			dependencies = (
 			);
 			name = "adv_cmds-163";
@@ -351,7 +351,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -362,7 +362,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};

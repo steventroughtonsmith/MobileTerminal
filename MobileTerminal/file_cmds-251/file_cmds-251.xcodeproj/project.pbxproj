@@ -315,8 +315,8 @@
 			buildConfigurationList = B045EE301CA4DDC500CEA3B0 /* Build configuration list for PBXLegacyTarget "file_cmds-251" */;
 			buildPhases = (
 			);
-			buildToolPath = /usr/bin/make;
-			buildWorkingDirectory = "/Users/steven/Dropbox/Projects/iOS/MobileTerminal/MobileTerminal/file_cmds-251";
+			buildToolPath = make;
+			buildWorkingDirectory = "./";
 			dependencies = (
 			);
 			name = "file_cmds-251";
@@ -546,7 +546,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -557,7 +557,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};

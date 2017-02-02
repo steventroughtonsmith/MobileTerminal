@@ -327,8 +327,8 @@
 			buildConfigurationList = B0AB90121CA580F4001649D2 /* Build configuration list for PBXLegacyTarget "network_cmds-481.20.1" */;
 			buildPhases = (
 			);
-			buildToolPath = /usr/bin/make;
-			buildWorkingDirectory = "/Users/steven/Dropbox/Projects/iOS/MobileTerminal/MobileTerminal/network_cmds-481.20.1";
+			buildToolPath = make;
+			buildWorkingDirectory = "./";
 			dependencies = (
 			);
 			name = "network_cmds-481.20.1";
@@ -572,7 +572,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -583,7 +583,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
